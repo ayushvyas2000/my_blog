@@ -9,7 +9,7 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Dev Blog</title>
+        <title>The Dynamic Dev Blogs</title>
       </Head>
 
       <div className='flex flex-wrap justify-center items-center bg-gray-50'>
