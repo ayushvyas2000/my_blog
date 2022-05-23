@@ -10,6 +10,7 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>The Dynamic Dev Blogs</title>
+        <meta name="description" content="Welcome to The Dynamic Dev Blogs, here you will find articles related to web and software developments which include news, knowledge, snippets and more" />
       </Head>
 
       <div className='flex flex-wrap justify-center items-center bg-gray-50'>
