@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <main className='container'>
+      <main className='m-auto max-w-screen-lg  mb-10'>
         <Component {...pageProps} />
       </main>
     </>

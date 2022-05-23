@@ -1,108 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+html{
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: #f9fafb;
 }
 
 p {
-  margin: 15px 0;
-  line-height: 1.8;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-header {
-  background: steelblue;
-  color: #fff;
-  padding: 5px;
-  margin-bottom: 40px;
-}
-
-header a {
-  color: #fff;
-}
-
-.container {
-  max-width: 768px;
-  margin: auto;
-  overflow: auto;
-  padding: 0 10px;
-}
-
-.btn {
-  display: inline-block;
-  background: steelblue;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
-.btn-back {
-  background: #f4f4f4;
-  color: #000;
-  margin-bottom: 20px;
-}
-
-.posts {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.card {
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-page {
-  padding: 15px 30px;
-}
-
-.post-title {
-  margin: 10px 0;
-}
-
-.post-date {
-  background: #f4f4f4;
-  margin-bottom: 20px;
-  padding: 3px 10px;
+  margin: 15px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .post-body ul,
 ol {
+  list-style: disc;
   font-size: 110%;
-  line-height: 2.3;
+  line-height: 2;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 10px 30px;
 }
 
 .post-body pre {
@@ -110,10 +30,32 @@ ol {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
+  overflow-x: auto;
 }
 
-@media (max-width: 500px) {
-  .posts {
-    grid-template-columns: 1fr;
-  }
+.post-body a{
+  font-weight: 900;
+    color: blue;
 }
+
+.post-body p{
+  margin-bottom: 15px;
+}
+
+.post-body h1{
+  font-size: 200%;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 10px
+}
+
+.post-body h2{
+  font-size: 150%;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 5px
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

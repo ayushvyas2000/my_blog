@@ -3,22 +3,26 @@ import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import Link from 'next/link'
-
+import Head from 'next/head'
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
+  frontmatter: { title, date, cover_image,excerpt },
   slug,
   content,
 }) {
   return (
     <>
+    <Head>
+      <title>{title}</title>
+      <meta name="description" content={excerpt} />
+    </Head>
       <Link href='/'>
-        <a className='btn btn-back'>Go Back</a>
+        <a className='px-3 py-2 rounded-md m-auto bg-emerald-500'>Go Back</a>
       </Link>
-      <div className='card card-page'>
-        <h1 className='post-title'>{title}</h1>
-        <div className='post-date'>Posted on {date}</div>
-        <img src={cover_image} alt='' />
-        <div className='post-body'>
+      <div className='bg-white p-10 shadow-lg my-10'>
+        <h1 className='my-5 post-title text-4xl font-bold'>{title}</h1>
+        <div className='my-2 text-gray-400'>Posted on {date}</div>
+        <img className='m-auto rounded-xl h-96' src={cover_image} alt='' />
+        <div className='post-body my-5'>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
