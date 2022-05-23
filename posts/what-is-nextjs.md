@@ -25,7 +25,7 @@ Just like any other framework, NEXT has many features.  Here are some of the not
 
 ## Why NEXT.js over plain React?
 
-NEXT provides an easier way to switch the rendering of the webpages to the server side.  This improves the performance in terms of speed as well as **Search Engine Optimization**.  Using static site generation on webpages whose may not change on a regular basis, we can deliver the web-pages over a CDN which will make the page loading superfast.
+NEXT provides an easier way to switch the rendering of the webpages to the server side.  This improves the performance in terms of speed as well as **Search Engine Optimization**.  Using static site generation on webpages whose content may not change on a regular basis, we can deliver the web-pages over a CDN which will make the page loading superfast.
 
 NEXT also comes with out of the box image optimization using the inbuilt **Image** component.
 
