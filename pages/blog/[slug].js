@@ -15,9 +15,7 @@ export default function PostPage({
       <title>{title}</title>
       <meta name="description" content={excerpt} />
     </Head>
-      <Link href='/'>
-        <a className='px-3 py-2 rounded-md m-auto bg-emerald-500'>Go Back</a>
-      </Link>
+      <Link href='/' className='px-3 py-2 rounded-md m-auto bg-emerald-500'>Go Back</Link>
       <div className='bg-white p-10 shadow-lg my-10'>
         <h1 className='my-5 post-title text-4xl font-bold'>{title}</h1>
         <div className='my-2 text-gray-400'>Posted on {date}</div>

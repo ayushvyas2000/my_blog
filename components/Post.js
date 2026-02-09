@@ -11,9 +11,8 @@ export default function Post({ post }) {
 
       <p>{post.frontmatter.excerpt}</p>
 
-      <Link href={`/blog/${post.slug}`}>
-        <a className='text-white rounded-3xl py-2 flex items-center justify-center bg-emerald-700 w-32'>
-          Read More</a>
+      <Link href={`/blog/${post.slug}`} className='text-white rounded-3xl py-2 flex items-center justify-center bg-emerald-700 w-32'>
+          Read More
       </Link>
     </div>
   )
